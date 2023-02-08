@@ -6,7 +6,7 @@ button, input, optgroup, select, textarea {
 select {
     box-sizing: border-box;
     width: 100%;
-    padding: rem-calc(5px 8px);
+    padding:5px 8px;
     height: 40px;
     border: 1px solid $grey;
     transition: border-color 0.35s;
@@ -20,7 +20,7 @@ button, input[type=submit] {
     cursor: pointer;
     background-color: $primary-colour;
     color: #fff;
-    padding: rem-calc(10 15);
+    padding: 10px 15px;
     font-weight: 600;
     &:focus, &:hover {
         background-color: $primary-colour-dim;
@@ -29,17 +29,17 @@ button, input[type=submit] {
 fieldset {
     border: 2px solid $grey;
     legend {
-        padding: 0 rem-calc(10px);
+        padding: 0 10px;
         font-weight: bold;
     }
 }
 label {
-    margin-bottom: rem-calc(5px);
+    margin-bottom:5px;
     display: block;
 }
 input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
     width: 100%;
-    padding: rem-calc(5px 8px);
+    padding: 5px 8px;
     height: 40px;
     border: 1px solid  $grey;
     transition: border-color 0.35s;
