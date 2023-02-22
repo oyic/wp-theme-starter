@@ -1,0 +1,13 @@
+.c-search-form {
+  position: relative;
+  padding-right: 44px;
+}
+.c-search-form__label {
+  margin-bottom: 0;
+}
+.c-search-form__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+}/*# sourceMappingURL=_search-form.css.map */

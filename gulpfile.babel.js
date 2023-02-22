@@ -15,7 +15,6 @@ import GulpZip from "gulp-zip";
 import replace from "gulp-replace";
 import theme from "./package.json";
 import gulpPurgeCSS from "gulp-purgecss";
-
 const local = browserSync.create();
 
 const sass = gulpSass(dartSass);
@@ -68,7 +67,7 @@ const paths = {
 
 export const loadServer = (done) => {
   local.init({
-    proxy: "http://basic.local/",
+    proxy: "http://webfx.local/",
   });
   done();
 };
@@ -145,6 +144,9 @@ export const scripts = () => {
         output: {
           filename: "[name].js",
         },
+        externals: {
+          jquery: "jQuery",
+        },
         devtool: !PRODUCTION ? "inline-source-map" : false,
         mode: PRODUCTION ? "production" : "development", //add this
       })
@@ -157,7 +159,7 @@ export const scripts = () => {
 export const packaging = () => {
   return gulp
     .src(paths.package.src)
-    .pipe(replace("_theme", theme.name))
+    .pipe(replace("_placeholder", theme.name))
     .pipe(GulpZip(`${theme.name}.zip`))
     .pipe(gulp.dest(paths.package.dest));
 };
