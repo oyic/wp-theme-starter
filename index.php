@@ -8,12 +8,12 @@
             </a>
         </h2>
         <div>
-            <?php _theme_post_meta(); ?>
+            <?php _placeholder_post_meta(); ?>
         </div>
         <div>
             <?php the_excerpt(); ?>
         </diV>
-            <?php _theme_readmore_link(); ?> 
+            <?php _placeholder_readmore_link(); ?> 
     <?php } ?>
     <?php the_posts_pagination( ); ?>
 <?php } else { ?>

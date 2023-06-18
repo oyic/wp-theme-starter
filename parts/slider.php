@@ -4,7 +4,7 @@
             <div class="item">
                 <div class="slide-image">
                    
-                    <?php echo wp_get_attachment_image( get_sub_field('image'),'full', false, ['alt'=>'Slide Image: '.esc_html__(get_sub_field('large_header'),'_theme')] );?>
+                    <?php echo wp_get_attachment_image( get_sub_field('image'),'full', false, ['alt'=>'Slide Image: '.esc_html__(get_sub_field('large_header'),'_placeholder')] );?>
                 </div>
                 <div class="container">
 				<div class="slide-content">
